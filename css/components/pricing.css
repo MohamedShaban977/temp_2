@@ -106,7 +106,7 @@
 
 
 .subscribe {
-    padding-block: var(--section-padding) ;
+    padding-block: var(--section-padding);
     position: relative;
     background-image: url(../../assets/images/subscribe.jpg);
 
@@ -129,19 +129,22 @@
     display: flex;
     align-items: center;
 }
-@media (max-width: 991px) {
-.subscribe .container {
-    flex-direction: column;
 
-}    
+@media (max-width: 991px) {
+    .subscribe .container {
+        flex-direction: column;
+
+    }
 }
-.subscribe .container form{
+
+.subscribe .container form {
     display: flex;
     position: relative;
     width: 500px;
     color: white;
     max-width: 100%;
 }
+
 .subscribe form i {
     position: absolute;
     top: 50%;
@@ -150,7 +153,7 @@
     left: 25px;
 }
 
-.subscribe .container form input[type="email"]{
+.subscribe .container form input[type="email"] {
     border: 1px solid white;
     color: white;
     border-right: none;
@@ -173,9 +176,11 @@
 .subscribe .container form input[type="email"]:focus {
     outline: none;
 }
+
 .subscribe .container form button:focus {
     outline: none;
 }
+
 .subscribe .container form ::placeholder {
     color: white;
 }
@@ -189,5 +194,5 @@
     .subscribe .container p {
         margin-top: 50px;
         margin-inline: 30px;
-    }   
     }
+}

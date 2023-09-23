@@ -7,7 +7,7 @@
 
 
     justify-content: space-between;
-    margin-top: 40px ;
+    margin-top: 40px;
 
 }
 
@@ -86,9 +86,10 @@
         transform: translateX(-50%);
         transition: all 500ms;
     }
+
     .contact-us-container .info-contact h4:hover::after {
         width: 120px;
-    
+
     }
 }
 
@@ -97,11 +98,13 @@
 .contact-us-container .info-contact h4:nth-of-type(2) {
     margin-top: 90px;
 }
-@media (max-width: 767px)  {
+
+@media (max-width: 767px) {
     .contact-us-container .info-contact h4:nth-of-type(2) {
         margin-top: 30px;
-    } 
+    }
 }
+
 .contact-us-container .info-contact span {
     display: block;
 }
@@ -118,15 +121,16 @@
 
 @media (max-width: 767px) {
     .contact-us-container {
-                flex-direction: column-reverse;
+        flex-direction: column-reverse;
     }
+
     .contact-us-container form button {
         margin: auto;
     }
 
     .contact-us-container .info-contact {
         text-align: center;
-        margin-bottom: 50px ;
+        margin-bottom: 50px;
 
 
     }

@@ -65,15 +65,16 @@
   position: relative;
   transition: 800ms;
 }
+
 .header .container .nav-bar .form:hover {
-    border-radius: 50%;
-    height: 40px;
+  border-radius: 50%;
+  height: 40px;
 
-    border-inline-start: 2px solid white;
-    box-shadow: -4px 1px 10px  #ffffff9a;
+  border-inline-start: 2px solid white;
+  box-shadow: -4px 1px 10px #ffffff9a;
 
-    /* -15px 0px 17px -7px */
-    background-color:var(--transparent-color);
+  /* -15px 0px 17px -7px */
+  background-color: var(--transparent-color);
 
 }
 
@@ -87,9 +88,9 @@
   position: absolute;
 }
 
-.header .container .nav-bar .form:hover i{
+.header .container .nav-bar .form:hover i {
   right: 25%;
-  transform:translate(0,-50%) rotate(360deg);
+  transform: translate(0, -50%) rotate(360deg);
 }
 
 i.icon {
