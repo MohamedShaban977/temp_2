@@ -1,0 +1,119 @@
+.portfolio {
+    padding-block: 100px;
+}
+
+.menu-button {
+    margin-bottom: 60px;
+}
+
+.menu-button ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-button ul li {
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 500ms;
+    margin-inline: 5px;
+    border-radius: 5px;
+    min-width: 60px;
+    text-align: center;
+}
+
+.menu-button ul li.active,
+.menu-button ul li:hover {
+    color: white;
+    background-color: var(--main-color);
+}
+
+.menu-button ul li:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-container .image-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-container .image-container .box-item {
+    overflow: hidden;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .portfolio-container .image-container .box-item {
+        flex-basis: 50%;
+    }
+}
+
+@media (min-width: 1199px) {
+    .portfolio-container .image-container .box-item {
+        flex-basis: 25%;
+    }
+}
+
+.portfolio-container .image-container .box-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 60%);
+    transition: 500ms;
+    z-index: 1;
+}
+
+.portfolio-container .image-container .box-item:hover::before {
+    background-color: rgb(0 0 0 / 0%);
+}
+
+
+
+.portfolio-container .image-container .box-item img {
+    max-width: 100%;
+    transition: 0.5s;
+
+}
+
+.portfolio-container .image-container .box-item:hover img {
+    transform: rotate(3deg) scale(1.1);
+}
+
+.portfolio-container .image-container .box-item .caption {
+    position: absolute;
+    left: 0;
+    padding: 20px;
+    background-color: white;
+    width: 100%;
+    transition: 0.5s;
+    bottom: -100%;
+}
+
+.portfolio-container .image-container .box-item:hover .caption {
+    bottom: 0;
+}
+
+.portfolio-container .image-container .box-item .caption h4 {
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.portfolio-container .image-container .box-item .caption p {
+    color: var(--main-color);
+}
+
+.portfolio-container .more-button {
+    background-color: var(--main-color);
+    padding: 15px 20px;
+    color: white;
+    display: block;
+    text-align: center;
+    margin: 30px auto;
+    width: fit-content;
+    text-transform: uppercase;
+}
