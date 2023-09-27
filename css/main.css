@@ -1,0 +1,12 @@
+@import "./glabal_rulse.css ";
+@import "./components/header.css";
+@import "./components/landing.css";
+@import "./components/main_heading.css";
+@import "./components/services.css";
+@import "./components/design.css";
+@import "./components/portfolio.css";
+@import "./components/video.css";
+@import "./components/about.css";
+@import "./components/pricing.css";
+@import "./components/contact_us.css";
+@import "./components/footer.css";
